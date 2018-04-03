@@ -247,5 +247,6 @@ django_heroku.settings(locals())
 if "FORCE_SCRIPT_NAME" in os.environ:
     FORCE_SCRIPT_NAME = os.environ["FORCE_SCRIPT_NAME"]
     STATIC_URL = "{FORCE_SCRIPT_NAME}{STATIC_URL}".format(**locals())
+    MEDIA_URL = "{FORCE_SCRIPT_NAME}{MEDIA_URL}".format(**locals())
     WHITENOISE_STATIC_PREFIX = "static/"
 
