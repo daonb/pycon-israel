@@ -2,4 +2,4 @@
 # post-compile hook for Heroku
 ./manage.py compilemessages
 mkdir -p ilpycon/staticfiles/imported_media/images
-ln -s ${PWD}/ilpycon/staticfiles/images/sponsor-logos ilpycon/staticfiles/imported_media/images/sponsor_files
+ln -s '/app/ilpycon/staticfiles/images/sponsor-logos' ilpycon/staticfiles/imported_media/images/sponsor_files
