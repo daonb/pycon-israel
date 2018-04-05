@@ -1,4 +1,4 @@
 #!/bin/bash
 # post-compile hook for Heroku
 ./manage.py compilemessages
-ln -s /app/ilpycon/staticfiles/images/sponsor-logos /app/ilpycon/staticfiles/images/sponsor_files
+mkdir -p ilpycon/staticfiles/imported_media/images && ln -s /app/ilpycon/staticfiles/images/sponsor-logos /app/ilpycon/staticfiles/imported_media/images/sponsor_files

@@ -242,7 +242,7 @@ PROPOSAL_FORMS = {
 
 import django_heroku
 django_heroku.settings(locals())  # This changes STATIC_ROOT & STATIC_URL
-MEDIA_URL = STATIC_URL
+MEDIA_URL = STATIC_URL + "imported_media/"
 
 
 if "FORCE_SCRIPT_NAME" in os.environ:
