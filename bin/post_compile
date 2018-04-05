@@ -1,5 +1,5 @@
 #!/bin/bash
 # post-compile hook for Heroku
 ./manage.py compilemessages
-mkdir -p /app/ilpycon/staticfiles/images/sponsor-logos && mkdir -p /app/ilpycon/staticfiles/imported_media/images
-ln -s /app/ilpycon/staticfiles/images/sponsor-logos /app/ilpycon/staticfiles/imported_media/images/sponsor_files
+mkdir -p /app/static/dist/imported_media/images
+cp -rv /app/static/dist/images/sponsor-logos /app/static/dist/imported_media/images/sponsor_files
